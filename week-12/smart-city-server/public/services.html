@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ramayampet - Services Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="main-header">
+        <h1>MANA MUNICIPAL CORPORATION, RAMAYAMPET</h1>
+        <img src="ramayampet.jpg" alt="City Logo">
+        <p><strong>Clean City | Smart Living | Better Future</strong></p>
+    </header>
+
+    <nav>
+        <a href="index.html"><button class="nav-button">Home</button></a>
+        <a href="services.html"><button class="nav-button">Services</button></a>
+        <a href="tourism.html"><button class="nav-button">Tourism</button></a>
+        <a href="gallery.html"><button class="nav-button">Gallery</button></a>
+        <a href="contact.html"><button class="nav-button">Contact</button></a>
+    </nav>
+
+    <main>
+        <section class="info-box" onmouseover="highlightSection(this)" onmouseout="resetSection(this)">
+            <h2>Live Public Transport Information (AJAX)</h2>
+            <p>Click below to securely fetch the latest transport schedule from our Node.js server using JSON and AJAX.</p>
+            <br>
+            <button type="button" id="transportBtn" class="action-btn">Fetch Live Bus Schedule</button>
+            <div id="transportOutput" class="output-box"></div>
+        </section>
+
+        <section class="info-box" onmouseover="highlightSection(this)" onmouseout="resetSection(this)">
+            <h2>Citizen Complaint Registration</h2>
+            <p>Register your complaint below. Our system will validate your information and generate a unique tracking ID.</p>
+            <br>
+            <div class="form-group">
+                <label for="citizenName">Full Name:</label>
+                <input type="text" id="citizenName" class="form-input" placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label for="citizenContact">Contact Number:</label>
+                <input type="text" id="citizenContact" class="form-input" placeholder="Enter 10-digit mobile number">
+            </div>
+            <div class="form-group">
+                <label for="serviceType">Complaint Category:</label>
+                <select id="serviceType" class="form-input">
+                    <option value="Water Supply">Water Supply Issue</option>
+                    <option value="Sanitation">Sanitation & Garbage</option>
+                    <option value="Street Lighting">Street Lighting Failure</option>
+                    <option value="Road Maintenance">Road Maintenance</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="complaintDesc">Complaint Description:</label>
+                <textarea id="complaintDesc" class="form-input" placeholder="Briefly describe the issue..."></textarea>
+            </div>
+            <button type="button" id="registerBtn" class="action-btn">Submit Complaint</button>
+            <div id="dashboardOutput" class="output-box"></div>
+        </section>
+
+        <section class="info-box" onmouseover="highlightSection(this)" onmouseout="resetSection(this)">
+            <h2>City Infrastructure & Facilities</h2>
+            <p>Click the button below to load the list of available city facilities from the municipal database.</p>
+            <button type="button" id="facilityBtn" class="action-btn">Load Public Facilities</button>
+            <div id="facilityList" class="facility-list-area"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Municipal Corporation, Ramayampet &reg;</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

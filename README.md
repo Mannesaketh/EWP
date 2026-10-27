@@ -1,4 +1,8 @@
-# Tourism Spa India
+# EWP
+
+Essentials of Web Programming, including the Tourism Spa India project.
+
+## Tourism Spa India
 
 An English-language Indian wellness tourism portal with a separate Angular frontend and Express API.
 
