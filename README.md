@@ -6,17 +6,22 @@ Essentials of Web Programming, including the Tourism Spa India project.
 
 An English-language Indian wellness tourism portal with a separate Angular frontend and Express API.
 
+## Repository projects
+
+- `tourism spa/` - Tourism Spa Angular frontend and Express backend
+- `EWP Twelve/` - EWP Twelve project
+
 ## Project layout
 
-- `visit-spa-angular/` - Angular 18 frontend
-- `visit-spa-server/` - Express backend API
+- `tourism spa/visit-spa-angular/` - Angular 18 frontend
+- `tourism spa/visit-spa-server/` - Express backend API
 
 Install dependencies separately in each application directory. Generated output, caches, and dependencies are excluded from Git by the root `.gitignore`.
 
 ## Start the Express API (`http://localhost:3000`)
-Open a terminal inside `visit-spa-server/`:
+Open a terminal inside `tourism spa/visit-spa-server/`:
 ```bash
-cd visit-spa-server
+cd "tourism spa/visit-spa-server"
 npm install
 npm start
 ```
@@ -24,9 +29,9 @@ npm start
 - Express is API-only. It does not serve the Angular UI.
 
 ## Start the Angular frontend (`http://localhost:4200`)
-Open a second terminal inside `visit-spa-angular/`:
+Open a second terminal inside `tourism spa/visit-spa-angular/`:
 ```bash
-cd visit-spa-angular
+cd "tourism spa/visit-spa-angular"
 npm install
 npm start
 ```
