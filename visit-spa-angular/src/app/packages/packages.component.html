@@ -1,0 +1,24 @@
+<p class="eyebrow">Handpicked India</p>
+<h2>Wellness packages made for your pace</h2>
+<p>Live journeys from our travel desk. Prices are shown in Indian rupees per person and can be tailored to your dates.</p>
+
+<button (click)="loadData()">Load India packages</button>
+
+<div class="status-msg">{{ message }}</div>
+
+<div class="packages-grid">
+  <div class="card package-card" *ngFor="let item of packages">
+    <div class="package-card-header">
+      <span class="package-code">{{ item.code }}</span>
+      <span [class]="item.available ? 'badge-available' : 'badge-unavailable'">
+        {{ item.available ? 'Open for enquiries' : 'Next season' }}
+      </span>
+    </div>
+    <h3>{{ item.name }}</h3>
+    <div class="package-details">
+      <p><strong>Start</strong><span>{{ item.start }}</span></p>
+      <p><strong>Route</strong><span>{{ item.destination }}</span></p>
+    </div>
+    <p class="package-price"><strong>From</strong> INR {{ item.price | number }} <span>per person</span></p>
+  </div>
+</div>

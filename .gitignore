@@ -1,0 +1,23 @@
+# Dependencies
+**/node_modules/
+
+# Angular and build output
+**/.angular/
+**/dist/
+
+# Local environment and editor files
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
